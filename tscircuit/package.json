@@ -1,0 +1,19 @@
+{
+  "name": "@tsci/githubusername.packagename",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/index.cjs",
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "tsci dev",
+    "build": "tsup ./index.tsx --sourcemap --dts",
+    "ship": "tsci publish --increment"
+  },
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "typescript": "^5.4.5",
+    "tscircuit": "^0.0.169"
+  }
+}
